@@ -40,6 +40,15 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
+      // Add this to the existing Tabs component
+<Tabs.Screen
+  name="marks-sorter"
+  options={{
+    title: 'Marks Sorter',
+    tabBarIcon: ({ color }) => <IconSymbol size={28} name="number" color={color} />,
+  }}
+/>
     </Tabs>
+    
   );
 }
